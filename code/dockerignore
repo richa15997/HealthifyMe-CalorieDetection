@@ -1,0 +1,11 @@
+healthenv_objdetection/
+static/
+.vscode/
+final_model/
+OIDv4_ToolKit/
+Test_Apple_Orange_Banana_Pumpkin_Watermelon_Lemon/
+Train_Apple_Orange_Banana_Pumpkin_Watermelon_Lemon/
+Upsample_dataset.py/
+Downsample_dataset.py/
+__pycache__/
+.dockerignore

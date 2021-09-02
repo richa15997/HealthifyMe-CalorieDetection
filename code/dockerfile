@@ -1,0 +1,23 @@
+FROM tensorflow/tensorflow:latest-gpu
+RUN apt-get clean
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN mkdir -p /usr/src/app/static
+RUN apt-get update
+RUN apt-get install -y git python-pip
+RUN pip install --upgrade pip && pip install flask gunicorn opencv-python 
+
+RUN pip3 install -r /usr/src/app/requirements.txt
+
+RUN apt-get install -y protobuf-compiler python-pil python-lxml
+RUN pip install jupyter
+RUN pip install matplotlib
+RUN git clone https://github.com/tensorflow/models.git /usr/src/app/code/tensorflow/models
+WORKDIR /usr/src/app/code/tensorflow/models/research
+RUN protoc object_detection/protos/*.proto --python_out=.
+#install libraries to run tensorflow
+RUN apt-get install -y libgl1-mesa-dev
+#RUN apt-get update
+CMD exec gunicorn --bind :8080 --workers 1 --threads 0 --timeout 0 /usr/src/app/code/predictor_flask:app

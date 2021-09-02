@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction result</title>
+</head>
+<body>
+
+    <h4>Prediction result</h4>
+
+    <div>
+        <img src="{{url_for('static', filename=image_name)}}" alt="" width="500" height="500">
+    </div>
+    <div>
+        <h4>The above image is: "{{predicted_class}}" with approx calories of: {{cal}} </h4>
+    </div>
+    
+</body>
+</html>
