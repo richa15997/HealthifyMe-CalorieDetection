@@ -7,7 +7,7 @@ Above image is the intro page
 Above image is the page to upload an image of your choice
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/28618175/131423709-09ecf899-e011-4fce-83f4-54863b49a469.png">
 Above image is the page to view the image that you chose. Once you select the "predict" button the food item will be determined and its calories will be returned.
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/28618175/131424237-8e180f4c-557a-4c32-a230-a6239c48d6cc.png">
+<img width="1200" alt="image" src="https://user-images.githubusercontent.com/28618175/131424237-8e180f4c-557a-4c32-a230-a6239c48d6cc.png">
 Above image is the calories predicted of the given image based on the size of the item.
 
 ## Prerequisites
