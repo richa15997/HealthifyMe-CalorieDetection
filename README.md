@@ -20,12 +20,12 @@ Download all the folders and execute the predictor_flask.py script using format 
 Food recognition was performed using transfer learning of SSD MobileNet model. The combination of SSD and Mobilenet model produces an object detection detection model. The SSD MobileNet model consists of two parts; the base network and the detection network. 
 
 Mobilenet is the base network which is used for object recognition. 
-https://static.wixstatic.com/media/b90216_85fe4f7a9d034a8da07f4710dce9a108~mv2.png/v1/fill/w_1060,h_305,al_c,lg_1/b90216_85fe4f7a9d034a8da07f4710dce9a108~mv2.png![image](https://user-images.githubusercontent.com/28618175/132108269-b4344297-14b1-4bce-94b6-c12fb628bf25.png)
+<img width="1314" alt="image" src="https://user-images.githubusercontent.com/28618175/132108405-9a2aa2dc-6f4d-4d27-81a7-c04648120cb0.png">
 
 The SSD is the detection network which ensures multiple objects can be detected from a single shot image. Therefore the SSD network can be placed on different base networks such as ResNet, MobileNet, R-CNN, Yolo etc. 
 <img width="925" alt="image" src="https://user-images.githubusercontent.com/28618175/132108297-93977f87-d9fc-4d38-9352-ccf990e724c2.png">
 
 The choice of MobileNet as the base network on the SSD model is beneficial as both seek to perform object recognition in computationally limited devices. Therefore the combination of both provides high accuracy tradeoff and fast computational results. 
-https://static.wixstatic.com/media/b90216_caa66cfb7cd246098cac145b2faa3485~mv2.png/v1/fill/w_1256,h_468,al_c/b90216_caa66cfb7cd246098cac145b2faa3485~mv2.png![image](https://user-images.githubusercontent.com/28618175/132108334-36d8a7aa-e904-49ed-abaa-05bd131bd2a6.png)
+<img width="782" alt="image" src="https://user-images.githubusercontent.com/28618175/132108417-fd6a15e7-355a-4964-b26f-f62a1c5a9faf.png">
 
 Dataset of food items was collected from Open Images Dataset and downloaded using the [OIDV4 ToolKit](https://github.com/EscVM/OIDv4_ToolKit).
