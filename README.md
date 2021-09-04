@@ -23,9 +23,20 @@ Mobilenet is the base network which is used for object recognition.
 <img width="1314" alt="image" src="https://user-images.githubusercontent.com/28618175/132108405-9a2aa2dc-6f4d-4d27-81a7-c04648120cb0.png">
 
 The SSD is the detection network which ensures multiple objects can be detected from a single shot image. Therefore the SSD network can be placed on different base networks such as ResNet, MobileNet, R-CNN, Yolo etc. 
+
 <img width="925" alt="image" src="https://user-images.githubusercontent.com/28618175/132108297-93977f87-d9fc-4d38-9352-ccf990e724c2.png">
 
-The choice of MobileNet as the base network on the SSD model is beneficial as both seek to perform object recognition in computationally limited devices. Therefore the combination of both provides high accuracy tradeoff and fast computational results. 
+The choice of MobileNet as the base network on the SSD model is beneficial as both seek to perform object recognition in computationally limited devices. Therefore the combination of both provides high accuracy tradeoff and fast computational results in real-time. 
+
 <img width="782" alt="image" src="https://user-images.githubusercontent.com/28618175/132108417-fd6a15e7-355a-4964-b26f-f62a1c5a9faf.png">
 
-Dataset of food items was collected from Open Images Dataset and downloaded using the [OIDV4 ToolKit](https://github.com/EscVM/OIDv4_ToolKit).
+Dataset of food items was collected from [Open Images Dataset](https://g.co/dataset/open-images) and downloaded using the [OIDV4 ToolKit](https://github.com/EscVM/OIDv4_ToolKit).
+
+The training code can be found in script code/Training.py
+
+## Working
+The dockerfile contains the dockerized version of the code whose image can be downloaded and run on your personal PC. It is also possible to run the application without downloading the dockerized image by downloading predictor_flask.py The HTML linked to the flask application can be found in the Templates folder. 
+
+## References:
+**SSD MobileNet understanding:** https://www.xailient.com/post/real-time-vehicle-detection-with-mobilenet-ssd-and-xailient
+**Download data using OIDv4 ToolKit:** https://www.youtube.com/watch?v=dLSFX6Jq-F0&t=612s
